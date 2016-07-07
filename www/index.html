@@ -22,12 +22,12 @@
     <script src="js/logic.js"></script>
 </head>
 
-<body>
+<body style="background-color: #000; color: #fff">
     <div class="app">
         <h1>Multiplication Table App</h1>
         <input type="text" ng-model="tabfor" placeholder="Table for" value="9" style="height:40px; width: 100px;line-height:40px;font-size:20px;"/>
         <br/>
-        <table border="1" _ng-controller="ECPController">
+        <table border="1" _ng-controller="ECPController" style="border-collapse: collapse;">
             <tr ng-repeat="n in [1,2,3,4,5,6,7,8,9,10]">
                 <td>{{tabfor}}</td>
                 <td>X</td>
